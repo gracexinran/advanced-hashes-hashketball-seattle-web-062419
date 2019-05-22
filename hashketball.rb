@@ -105,7 +105,7 @@ def big_shoe_rebounds
   game_hash.each do |k, v|
     game_hash[k][:players].keys.each do |name|
       if name == player
-        return game_hash[k][:players][name][:rebounds]
+        return game_hash[k][:players][player][:rebounds]
       end
     end
   end
