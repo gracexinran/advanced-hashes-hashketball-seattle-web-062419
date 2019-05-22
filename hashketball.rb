@@ -95,10 +95,10 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  shoe = {}
+  shoes = {}
   game_hash.each do |k, v|
     game_hash[k][:players].each do |player, num|
-      shoe[player] = num[:shoe]
+      shoes[player] = num[:shoe]
     end
   end
  return shoe[shoe.values.max]
