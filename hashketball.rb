@@ -76,7 +76,7 @@ def player_numbers(team)
     num2.push(num[:number])
   end
   game_hash.each do |k,v|
-    if game_hash[k][:team_name] == team 
+    if team = "" 
       return game_hash[k][:colors]
     end
   end
