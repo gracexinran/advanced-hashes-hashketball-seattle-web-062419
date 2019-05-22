@@ -85,5 +85,11 @@ def player_numbers(team)
 end
 
 def player_stats(player)
-  
-  
+  game_hash.each do |k, v|
+    game_hash[k][:players].keys.each do |name|
+      if name == player
+        return game_hash[k][:players][name]
+      end
+    end
+  end
+end
