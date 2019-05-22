@@ -78,7 +78,7 @@ def player_numbers(team)
   game_hash.each do |k,v|
     if team = "Brooklyn Nets" 
       return num1.sort
-    else
+    elsif team = 
       return num2.sort
     end
   end
