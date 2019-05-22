@@ -75,7 +75,7 @@ def player_numbers(team)
         number = num[:number]
         numbers.push(number)
       end
-      numbers.sort
+      numbers
     end
   end
 end
