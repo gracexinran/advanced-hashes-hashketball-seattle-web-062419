@@ -97,11 +97,11 @@ end
 def big_shoe_rebounds
   shoes = {}
   game_hash.each do |k, v|
-    game_hash[k][:players].each do |player, value|
-      shoes[player] = value[:shoe]
+    game_hash[k][:players].each do |player, num|
+      shoes[player] = num[:shoe]
     end
   end
- return shoes.values.max
+ shoes.key(shoes.values.max)
   # game_hash.each do |k, v|
   #   game_hash[k][:players].keys.each do |name|
   #     if name == player
