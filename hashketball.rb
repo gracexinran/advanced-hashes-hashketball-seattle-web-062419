@@ -72,5 +72,12 @@ def player_numbers(team)
   game_hash[:home][:players].each do |player, num|
     num1.push(num[:number])
   end
-  
+  game_hash[:away][:players].each do |player, num|
+    num2.push(num[:number])
+  end
+  game_hash.each do |k,v|
+    if game_hash[k][:team_name] == team 
+      return game_hash[k][:colors]
+    end
+  end
 end
