@@ -67,15 +67,10 @@ def team_names
 end
 
 def player_numbers(team)
-  
-  game_hash.each do |key, value|
-    if game_hash[key][:team_name] == team 
-      numbers = []
-      game_hash[key][:players].collect do |player, num|
-        num[:number]
-        
-      end
-      
-    end
+  num1 = []
+  num2 = []
+  game_hash[:home][:players].each do |player, num|
+    num1.push(num[:number])
   end
+  
 end
