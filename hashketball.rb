@@ -76,9 +76,9 @@ def player_numbers(team)
     num2.push(num[:number])
   end
   
-  if team = "Brooklyn Nets" 
+  if team == "Brooklyn Nets" 
       return num1.sort
-  elsif team = "Charlotte Hornets"
+  elsif team == "Charlotte Hornets"
       return num2.sort
     end
   
