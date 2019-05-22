@@ -76,8 +76,10 @@ def player_numbers(team)
     num2.push(num[:number])
   end
   game_hash.each do |k,v|
-    if team = "" 
-      return game_hash[k][:colors]
+    if team = "Brooklyn Nets" 
+      return num1.sort
+    else
+      return num2.sort
     end
   end
 end
