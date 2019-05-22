@@ -71,11 +71,11 @@ def player_numbers(team)
   game_hash.each do |key, value|
     if game_hash[key][:team_name] == team 
       numbers = []
-      game_hash[key][:players].each do |player, num|
-        number = num[:number]
-        numbers.push(number)
+      game_hash[key][:players].collect do |player, num|
+        num[:number]
+        
       end
-      numbers
+      
     end
   end
 end
